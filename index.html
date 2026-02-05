@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理想伴侣测试 - 发现你的灵魂伴侣</title>
+    <script src="./理想伴侣测试 - 发现你的灵魂伴侣_files/saved_resource"></script>
+    <link rel="stylesheet" href="./理想伴侣测试 - 发现你的灵魂伴侣_files/all.min.css">
+    <link rel="stylesheet" href="./理想伴侣测试 - 发现你的灵魂伴侣_files/v4-shims.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B81',
+                        secondary: '#48DBFB',
+                        accent: '#FFD166',
+                        dark: '#2D3436',
+                        light: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #FFE5EC 0%, #E8F4FD 100%);
+            }
+            .card-shadow {
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            .btn-hover {
+                transition: all 0.3s ease;
+            }
+            .btn-hover:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            }
+            .btn-hover:active {
+                transform: translateY(0);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+                filter: brightness(0.95);
+            }
+            .option-btn:active {
+                background-color: #f8bbd0;
+                border-color: #e91e63;
+                box-shadow: 0 3px 10px rgba(233, 30, 99, 0.3);
+            }
+            .orientation-btn:active {
+                background-color: rgba(255, 107, 129, 0.15);
+            }
+            .progress-bar {
+                background: linear-gradient(90deg, #FF6B81, #48DBFB);
+                animation: progress 1s ease-in-out;
+            }
+            @keyframes progress {
+                from { width: 0%; }
+                to { width: var(--progress-width); }
+            }
+            .fade-in {
+                animation: fadeIn 0.5s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .slide-in {
+                animation: slideIn 0.5s ease-in-out;
+            }
+            @keyframes slideIn {
+                from { opacity: 0; transform: translateX(-20px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mr-4{margin-right:1rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-2{height:0.5rem}.h-3{height:0.75rem}.min-h-screen{min-height:100vh}.w-16{width:4rem}.w-3{width:0.75rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-md{max-width:28rem}.cursor-not-allowed{cursor:not-allowed}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border-2{border-width:2px}.border-transparent{border-color:transparent}.bg-accent{--tw-bg-opacity:1;background-color:rgb(255 209 102 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-pink-50{--tw-bg-opacity:1;background-color:rgb(253 242 248 / var(--tw-bg-opacity, 1))}.bg-pink-500{--tw-bg-opacity:1;background-color:rgb(236 72 153 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(255 107 129 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(72 219 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-inter{font-family:Inter, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-dark{--tw-text-opacity:1;color:rgb(45 52 54 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(255 107 129 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-50{opacity:0.5}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.gradient-bg {
+                background: linear-gradient(135deg, #FFE5EC 0%, #E8F4FD 100%);
+            }.card-shadow {
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }.btn-hover {
+                transition: all 0.3s ease;
+            }.btn-hover:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            }.btn-hover:active {
+                transform: translateY(0);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+                filter: brightness(0.95);
+            }.option-btn:active {
+                background-color: #f8bbd0;
+                border-color: #e91e63;
+                box-shadow: 0 3px 10px rgba(233, 30, 99, 0.3);
+            }.orientation-btn:active {
+                background-color: rgba(255, 107, 129, 0.15);
+            }.progress-bar {
+                background: linear-gradient(90deg, #FF6B81, #48DBFB);
+                animation: progress 1s ease-in-out;
+            }@keyframes progress {
+                from { width: 0%; }
+                to { width: var(--progress-width); }
+            }.fade-in {
+                animation: fadeIn 0.5s ease-in-out;
+            }@keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }@keyframes slideIn {
+                from { opacity: 0; transform: translateX(-20px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+        .hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-pink-100:hover{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-yellow-100:hover{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}
+        @media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-5xl{font-size:3rem;line-height:1}}
+    </style></head>
+<body class="font-inter min-h-screen gradient-bg">
+    <!-- 欢迎页面 -->
+    <div id="welcome-page" class="min-h-screen flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-4xl w-full card-shadow fade-in">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-dark mb-4">
+                    <i class="fa fa-heart text-primary mr-3"></i>
+                    理想伴侣测试
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    基于情感心理学的科学测试，帮助你发现最适合自己的灵魂伴侣
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-pink-50 rounded-xl p-6 text-center hover:bg-pink-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">科学测试</h3>
+                    <p class="text-gray-600">基于情感心理学理论设计，15个维度深度分析</p>
+                </div>
+                
+                <div class="bg-blue-50 rounded-xl p-6 text-center hover:bg-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">精准匹配</h3>
+                    <p class="text-gray-600">根据你的价值观、生活方式和情感需求精准匹配</p>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-xl p-6 text-center hover:bg-yellow-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">AI形象</h3>
+                    <p class="text-gray-600">生成个性化的伴侣形象，支持多种风格切换</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button onclick="startTest()" class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold btn-hover">
+                    <i class="fa fa-play mr-2"></i>
+                    开始测试
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 取向选择页面 -->
+    <div id="orientation-page" class="min-h-screen flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-2xl w-full card-shadow fade-in">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">
+                    <i class="fa fa-users text-primary mr-3"></i>
+                    选择你的取向偏好
+                </h2>
+                <p class="text-gray-600">这将帮助我们为你匹配更合适的伴侣形象</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <button onclick="selectOrientation(&#39;male&#39;)" class="orientation-btn bg-blue-50 rounded-xl p-6 text-center hover:bg-blue-100 transition-all duration-300 border-2 border-transparent">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-male text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">男性</h3>
+                </button>
+                
+                <button onclick="selectOrientation(&#39;female&#39;)" class="orientation-btn bg-pink-50 rounded-xl p-6 text-center hover:bg-pink-100 transition-all duration-300 border-2 border-transparent">
+                    <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-female text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">女性</h3>
+                </button>
+                
+                <button onclick="selectOrientation(&#39;bisexual&#39;)" class="orientation-btn bg-purple-50 rounded-xl p-6 text-center hover:bg-purple-100 transition-all duration-300 border-2 border-transparent">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">不限</h3>
+                </button>
+            </div>
+            
+            <div class="text-center">
+                <button id="continue-btn" onclick="continueToTest()" class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold btn-hover opacity-50 cursor-not-allowed" disabled="">
+                    <i class="fa fa-arrow-right mr-2"></i>
+                    继续
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 测试页面 -->
+    <div id="test-page" class="min-h-screen flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-3xl w-full card-shadow fade-in">
+            <div class="mb-8">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="text-xl font-bold text-dark">测试进度</h3>
+                    <span id="progress-text" class="text-gray-600">1/15</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div id="progress-bar" class="progress-bar h-2 rounded-full" style="--progress-width: 6.67%;"></div>
+                </div>
+            </div>
+            
+            <div id="question-container" class="mb-12">
+                <h2 id="question-title" class="text-2xl font-bold text-dark mb-6">你更看重伴侣的什么特质？</h2>
+                <p id="question-text" class="text-gray-600 mb-8">在选择伴侣时，你认为最重要的特质是什么？</p>
+                
+                <div id="options-container" class="space-y-4">
+                    <button onclick="selectOption(this)" class="option-btn w-full text-left p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-2 border-transparent">
+                        <span class="font-semibold">A. </span>
+                        <span>善良和同理心</span>
+                    </button>
+                    
+                    <button onclick="selectOption(this)" class="option-btn w-full text-left p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-2 border-transparent">
+                        <span class="font-semibold">B. </span>
+                        <span>诚实和正直</span>
+                    </button>
+                    
+                    <button onclick="selectOption(this)" class="option-btn w-full text-left p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-2 border-transparent">
+                        <span class="font-semibold">C. </span>
+                        <span>幽默感和乐观</span>
+                    </button>
+                    
+                    <button onclick="selectOption(this)" class="option-btn w-full text-left p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-2 border-transparent">
+                        <span class="font-semibold">D. </span>
+                        <span>责任感和可靠</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex justify-between">
+                <button id="prev-btn" onclick="prevQuestion()" class="bg-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold btn-hover opacity-50 cursor-not-allowed" disabled="">
+                    <i class="fa fa-arrow-left mr-2"></i>
+                    上一题
+                </button>
+                
+                <button id="next-btn" onclick="nextQuestion()" class="bg-primary text-white px-6 py-3 rounded-full font-semibold btn-hover opacity-50 cursor-not-allowed" disabled="">
+                    <i class="fa fa-arrow-right mr-2"></i>
+                    下一题
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 结果页面 -->
+    <div id="result-page" class="min-h-screen flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-4xl w-full card-shadow fade-in">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-dark mb-4">
+                    <i class="fa fa-heart text-primary mr-3"></i>
+                    你的理想伴侣是
+                </h2>
+                <h3 id="result-name" class="text-4xl font-bold text-primary mb-2">浪漫灵魂伴侣</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div class="text-center">
+                    <div class="mb-6">
+                        <img id="result-image" src="./理想伴侣测试 - 发现你的灵魂伴侣_files/Vq6q1vyRh0" alt="理想伴侣形象" class="w-full max-w-md mx-auto rounded-xl card-shadow">
+                    </div>
+                    
+                    <div class="flex justify-center space-x-4 mb-6">
+                        <button onclick="switchStyle(&#39;anime&#39;)" class="style-btn bg-purple-500 text-white px-4 py-2 rounded-full font-semibold btn-hover">
+                            动漫风格
+                        </button>
+                        <button onclick="switchStyle(&#39;realistic&#39;)" class="style-btn bg-blue-500 text-white px-4 py-2 rounded-full font-semibold btn-hover">
+                            写实风格
+                        </button>
+                        <button onclick="switchStyle(&#39;chinese&#39;)" class="style-btn bg-red-500 text-white px-4 py-2 rounded-full font-semibold btn-hover">
+                            中国风格
+                        </button>
+                    </div>
+                    
+                    <button onclick="switchImage()" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold btn-hover">
+                        <i class="fa fa-bullseye mr-2"></i>
+                        切换形象
+                    </button>
+                </div>
+                
+                <div>
+                    <h4 class="text-2xl font-bold text-dark mb-4">匹配分析</h4>
+                    <p id="result-description" class="text-gray-600 mb-8">
+                        你是一个注重情感连接和深度交流的人，渴望与伴侣建立灵魂层面的共鸣。你相信真爱，期待浪漫的惊喜和真挚的情感表达。在关系中，你愿意付出，也希望得到同等的回应。
+                    </p>
+                    
+                    <h4 class="text-2xl font-bold text-dark mb-4">核心特质</h4>
+                    <div id="result-traits" class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">深情</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">浪漫</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                            <span class="text-gray-700">富有想象力</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button onclick="restartTest()" class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold btn-hover mr-4">
+                    <i class="fa fa-bullseye mr-2"></i>
+                    重新测试
+                </button>
+                <button onclick="shareResult()" class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold btn-hover">
+                    <i class="fa fa-share mr-2"></i>
+                    分享结果
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 测试问题
+        const questions = [
+            {
+                title: "你更看重伴侣的什么特质？",
+                text: "在选择伴侣时，你认为最重要的特质是什么？",
+                options: [
+                    { text: "善良和同理心", value: "kind" },
+                    { text: "诚实和正直", value: "honest" },
+                    { text: "幽默感和乐观", value: "humorous" },
+                    { text: "责任感和可靠", value: "responsible" }
+                ]
+            },
+            {
+                title: "你理想的约会方式是？",
+                text: "你最喜欢的约会活动是什么？",
+                options: [
+                    { text: "浪漫的晚餐和电影", value: "romantic" },
+                    { text: "户外活动和冒险", value: "adventurous" },
+                    { text: "在家共度安静的夜晚", value: "quiet" },
+                    { text: "参加社交活动或聚会", value: "social" }
+                ]
+            },
+            {
+                title: "你如何处理冲突？",
+                text: "当你与伴侣发生分歧或冲突时，你会如何处理？",
+                options: [
+                    { text: "冷静沟通，寻找解决方案", value: "communicative" },
+                    { text: "暂时冷静，稍后再谈", value: "calm" },
+                    { text: "直接表达自己的想法", value: "direct" },
+                    { text: "妥协让步，维护和谐", value: "compromising" }
+                ]
+            },
+            {
+                title: "你对亲密关系的态度是？",
+                text: "你如何看待亲密关系？",
+                options: [
+                    { text: "非常重要，需要投入很多时间和精力", value: "committed" },
+                    { text: "适度就好，不要过于依赖", value: "independent" },
+                    { text: "比较独立，更看重个人空间", value: "space" },
+                    { text: "顺其自然，不强求", value: "casual" }
+                ]
+            },
+            {
+                title: "你对金钱的态度是？",
+                text: "你如何看待金钱在生活中的作用？",
+                options: [
+                    { text: "够用就好，更看重生活品质", value: "quality" },
+                    { text: "需要有一定的储蓄和规划", value: "saving" },
+                    { text: "应该享受当下，及时行乐", value: "enjoy" },
+                    { text: "追求财务自由和安全感", value: "secure" }
+                ]
+            },
+            {
+                title: "你对家庭的看法是？",
+                text: "你如何看待家庭在生活中的地位？",
+                options: [
+                    { text: "家庭是最重要的", value: "family-first" },
+                    { text: "家庭很重要，但个人空间也很重要", value: "balanced" },
+                    { text: "家庭是生活的一部分，但不是全部", value: "part" },
+                    { text: "更注重个人发展", value: "personal" }
+                ]
+            },
+            {
+                title: "你对朋友的态度是？",
+                text: "你如何看待友谊在生活中的作用？",
+                options: [
+                    { text: "朋友很重要，需要经常联系", value: "social" },
+                    { text: "有几个亲密的朋友就够了", value: "close" },
+                    { text: "朋友可以很多，但不必都很亲密", value: "many" },
+                    { text: "更倾向于独处", value: "alone" }
+                ]
+            },
+            {
+                title: "你对工作的态度是？",
+                text: "你如何看待工作在生活中的地位？",
+                options: [
+                    { text: "工作是为了生活", value: "work-to-live" },
+                    { text: "工作很重要，是实现自我价值的方式", value: "value" },
+                    { text: "工作和生活需要平衡", value: "balance" },
+                    { text: "更注重工作的成就感", value: "achievement" }
+                ]
+            },
+            {
+                title: "你对学习的态度是？",
+                text: "你如何看待学习和自我提升？",
+                options: [
+                    { text: "学习是为了实用", value: "practical" },
+                    { text: "学习是一种乐趣", value: "fun" },
+                    { text: "学习已经完成了", value: "finished" },
+                    { text: "学习是终身的事情", value: "lifelong" }
+                ]
+            },
+            {
+                title: "你对冒险的态度是？",
+                text: "你如何看待冒险和尝试新事物？",
+                options: [
+                    { text: "喜欢冒险，愿意尝试新事物", value: "adventurous" },
+                    { text: "比较谨慎，更喜欢熟悉的事物", value: "cautious" },
+                    { text: "跟随他人的建议", value: "follow" },
+                    { text: "避免冒险，喜欢稳定", value: "stable" }
+                ]
+            },
+            {
+                title: "你对未来的规划是？",
+                text: "你如何看待未来的生活？",
+                options: [
+                    { text: "有明确的目标和计划", value: "planned" },
+                    { text: "走一步看一步，顺其自然", value: "flexible" },
+                    { text: "希望有稳定的生活", value: "stable" },
+                    { text: "希望有更多的可能性", value: "possible" }
+                ]
+            },
+            {
+                title: "你对爱情的期望是？",
+                text: "你希望从爱情中得到什么？",
+                options: [
+                    { text: "深刻的情感连接和理解", value: "connection" },
+                    { text: "安全感和稳定", value: "security" },
+                    { text: "激情和浪漫", value: "passion" },
+                    { text: "共同成长和支持", value: "growth" }
+                ]
+            },
+            {
+                title: "你如何表达爱意？",
+                text: "你更倾向于如何表达对伴侣的爱？",
+                options: [
+                    { text: "通过言语和甜言蜜语", value: "words" },
+                    { text: "通过实际行动和关怀", value: "actions" },
+                    { text: "通过亲密的身体接触", value: "physical" },
+                    { text: "通过一起度过的时光", value: "time" }
+                ]
+            },
+            {
+                title: "你如何看待伴侣的缺点？",
+                text: "当发现伴侣的缺点时，你会如何处理？",
+                options: [
+                    { text: "接受并帮助对方改进", value: "accept" },
+                    { text: "尝试改变对方", value: "change" },
+                    { text: "忽略缺点，关注优点", value: "ignore" },
+                    { text: "重新考虑这段关系", value: "reconsider" }
+                ]
+            },
+            {
+                title: "你对完美关系的理解是？",
+                text: "你认为完美的关系是什么样的？",
+                options: [
+                    { text: "没有争吵，永远和谐", value: "perfect" },
+                    { text: "有争吵但能够解决", value: "resolve" },
+                    { text: "互相支持，共同成长", value: "support" },
+                    { text: "保持独立，又相互依赖", value: "interdependent" }
+                ]
+            }
+        ];
+        
+        // 伴侣类型定义
+        const partnerTypes = {
+            romantic: {
+                name: "浪漫灵魂伴侣",
+                description: "你是一个注重情感连接和深度交流的人，渴望与伴侣建立灵魂层面的共鸣。你相信真爱，期待浪漫的惊喜和真挚的情感表达。在关系中，你愿意付出，也希望得到同等的回应。",
+                traits: ["深情", "浪漫", "富有想象力"],
+                matchingAnswers: ["romantic", "committed", "connection", "words", "passion"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/Vq6q1vyRh0", "https://aka.doubaocdn.com/s/Vq6q1vyRh0"],
+                        realistic: ["https://aka.doubaocdn.com/s/hOQh1vyRgz", "https://aka.doubaocdn.com/s/hOQh1vyRgz"],
+                        chinese: ["https://aka.doubaocdn.com/s/8UbE1vyRgz", "https://aka.doubaocdn.com/s/8UbE1vyRgz"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/t0FH1vyRgz", "https://aka.doubaocdn.com/s/t0FH1vyRgz"],
+                        realistic: ["https://aka.doubaocdn.com/s/9g4I1vyRgz", "https://aka.doubaocdn.com/s/9g4I1vyRgz"],
+                        chinese: ["https://aka.doubaocdn.com/s/5jvc1vyRh1", "https://aka.doubaocdn.com/s/5jvc1vyRh1"]
+                    }
+                }
+            },
+            stable: {
+                name: "稳定可靠伴侣",
+                description: "你是一个注重稳定和安全感的人，希望与伴侣建立一个温馨和谐的家庭。你重视责任感和可靠性，相信通过共同努力可以创造美好的生活。在关系中，你更倾向于务实和理性。",
+                traits: ["可靠", "稳重", "有责任感"],
+                matchingAnswers: ["responsible", "stable", "security", "actions", "resolve"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/4Wpz1vyRhH", "https://aka.doubaocdn.com/s/4Wpz1vyRhH"],
+                        realistic: ["https://aka.doubaocdn.com/s/bF4H1vyRhG", "https://aka.doubaocdn.com/s/bF4H1vyRhG"],
+                        chinese: ["https://aka.doubaocdn.com/s/La5R1vyRhH", "https://aka.doubaocdn.com/s/La5R1vyRhH"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/JjkJ1vyRhG", "https://aka.doubaocdn.com/s/JjkJ1vyRhG"],
+                        realistic: ["https://aka.doubaocdn.com/s/sSZt1vyRhH", "https://aka.doubaocdn.com/s/sSZt1vyRhH"],
+                        chinese: ["https://aka.doubaocdn.com/s/6PUC1vyRhH", "https://aka.doubaocdn.com/s/6PUC1vyRhH"]
+                    }
+                }
+            },
+            adventurous: {
+                name: "冒险探索伴侣",
+                description: "你是一个热爱生活、喜欢冒险的人，希望与伴侣一起探索世界的无限可能。你重视自由和新鲜感，相信生活应该充满激情和挑战。在关系中，你更倾向于灵活和开放。",
+                traits: ["冒险", "乐观", "充满活力"],
+                matchingAnswers: ["adventurous", "fun", "possible", "passion", "interdependent"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/zIrX1vyRhW", "https://aka.doubaocdn.com/s/zIrX1vyRhW"],
+                        realistic: ["https://aka.doubaocdn.com/s/Prfg1vyRhW", "https://aka.doubaocdn.com/s/Prfg1vyRhW"],
+                        chinese: ["https://aka.doubaocdn.com/s/O9M91vyRhW", "https://aka.doubaocdn.com/s/O9M91vyRhW"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/Oote1vyRhW", "https://aka.doubaocdn.com/s/Oote1vyRhW"],
+                        realistic: ["https://aka.doubaocdn.com/s/xCsH1vyRhW", "https://aka.doubaocdn.com/s/xCsH1vyRhW"],
+                        chinese: ["https://aka.doubaocdn.com/s/UXCj1vyRhW", "https://aka.doubaocdn.com/s/UXCj1vyRhW"]
+                    }
+                }
+            },
+            intellectual: {
+                name: "知性智慧伴侣",
+                description: "你是一个注重思想交流和精神成长的人，希望与伴侣能够进行深度的对话和思考。你重视知识和智慧，相信通过学习和探索可以不断提升自己。在关系中，你更倾向于理性和独立。",
+                traits: ["智慧", "理性", "善于思考"],
+                matchingAnswers: ["lifelong", "value", "growth", "connection", "support"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/gTGt1vyRhl", "https://aka.doubaocdn.com/s/gTGt1vyRhl"],
+                        realistic: ["https://aka.doubaocdn.com/s/WFLf1vyRhl", "https://aka.doubaocdn.com/s/WFLf1vyRhl"],
+                        chinese: ["https://aka.doubaocdn.com/s/WRGK1vyRhn", "https://aka.doubaocdn.com/s/WRGK1vyRhn"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/0oo51vyRhm", "https://aka.doubaocdn.com/s/0oo51vyRhm"],
+                        realistic: ["https://aka.doubaocdn.com/s/wnAE1vyRhm", "https://aka.doubaocdn.com/s/wnAE1vyRhm"],
+                        chinese: ["https://aka.doubaocdn.com/s/DiVe1vyRhm", "https://aka.doubaocdn.com/s/DiVe1vyRhm"]
+                    }
+                }
+            },
+            loyal: {
+                name: "忠诚守护伴侣",
+                description: "你是一个非常重视忠诚和承诺的人，愿意为伴侣付出一切。你相信真正的爱情是坚贞不渝的，会用一生的时间来守护这份感情。在关系中，你是最可靠的支持者和保护者。",
+                traits: ["忠诚", "守护", "值得信赖"],
+                matchingAnswers: ["family-first", "responsible", "accept", "support", "perfect"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/d96o1vyRi1", "https://aka.doubaocdn.com/s/d96o1vyRi1"],
+                        realistic: ["https://aka.doubaocdn.com/s/eVtt1vyRi2", "https://aka.doubaocdn.com/s/eVtt1vyRi2"],
+                        chinese: ["https://aka.doubaocdn.com/s/RbiV1vyRi2", "https://aka.doubaocdn.com/s/RbiV1vyRi2"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/Ql9w1vyRi1", "https://aka.doubaocdn.com/s/Ql9w1vyRi1"],
+                        realistic: ["https://aka.doubaocdn.com/s/izRp1vyRi3", "https://aka.doubaocdn.com/s/izRp1vyRi3"],
+                        chinese: ["https://aka.doubaocdn.com/s/uTR91vyRi2", "https://aka.doubaocdn.com/s/uTR91vyRi2"]
+                    }
+                }
+            },
+            humorous: {
+                name: "幽默阳光伴侣",
+                description: "你是一个充满活力和幽默感的人，总能给身边的人带来快乐。你相信生活应该充满笑声和阳光，希望与伴侣一起创造更多美好的回忆。在关系中，你是快乐的源泉和积极的支持者。",
+                traits: ["幽默", "阳光", "充满活力"],
+                matchingAnswers: ["humorous", "enjoy", "fun", "time", "growth"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/LqIG1vyRiI", "https://aka.doubaocdn.com/s/LqIG1vyRiI"],
+                        realistic: ["https://aka.doubaocdn.com/s/Un6l1vyRiJ", "https://aka.doubaocdn.com/s/Un6l1vyRiJ"],
+                        chinese: ["https://aka.doubaocdn.com/s/esV81vyRiJ", "https://aka.doubaocdn.com/s/esV81vyRiJ"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/M9v01vyRiI", "https://aka.doubaocdn.com/s/M9v01vyRiI"],
+                        realistic: ["https://aka.doubaocdn.com/s/a3p01vyRiJ", "https://aka.doubaocdn.com/s/a3p01vyRiJ"],
+                        chinese: ["https://aka.doubaocdn.com/s/t0bN1vyRiI", "https://aka.doubaocdn.com/s/t0bN1vyRiI"]
+                    }
+                }
+            },
+            compassionate: {
+                name: "慈悲温暖伴侣",
+                description: "你是一个非常有同情心和爱心的人，总是能够理解和关心他人的感受。你相信爱是无私的付出，愿意为伴侣和家人奉献一切。在关系中，你是最温暖的港湾和最贴心的守护者。",
+                traits: ["慈悲", "温暖", "富有同情心"],
+                matchingAnswers: ["kind", "compromising", "accept", "actions", "support"],
+                images: {
+                    male: {
+                        anime: ["https://aka.doubaocdn.com/s/l94v1vyRiY", "https://aka.doubaocdn.com/s/l94v1vyRiY"],
+                        realistic: ["https://aka.doubaocdn.com/s/U6CL1vyRiZ", "https://aka.doubaocdn.com/s/U6CL1vyRiZ"],
+                        chinese: ["https://aka.doubaocdn.com/s/LHyF1vyRiZ", "https://aka.doubaocdn.com/s/LHyF1vyRiZ"]
+                    },
+                    female: {
+                        anime: ["https://aka.doubaocdn.com/s/UByp1vyRiY", "https://aka.doubaocdn.com/s/UByp1vyRiY"],
+                        realistic: ["https://aka.doubaocdn.com/s/RoxR1vyRiZ", "https://aka.doubaocdn.com/s/RoxR1vyRiZ"],
+                        chinese: ["https://aka.doubaocdn.com/s/2PKi1vyRiY", "https://aka.doubaocdn.com/s/2PKi1vyRiY"]
+                    }
+                }
+            }
+        };
+        
+        // 全局变量
+        let currentQuestionIndex = 0;
+        let answers = [];
+        let selectedOrientation = null;
+        let currentStyle = 'anime';
+        let currentImageIndex = 0;
+        let selectedGender = 'female'; // 默认女性
+        
+        // 开始测试
+        function startTest() {
+            document.getElementById('welcome-page').classList.add('hidden');
+            document.getElementById('orientation-page').classList.remove('hidden');
+        }
+        
+        // 选择取向
+        function selectOrientation(orientation) {
+            selectedOrientation = orientation;
+            
+            // 重置所有按钮样式
+            document.querySelectorAll('.orientation-btn').forEach(btn => {
+                btn.classList.remove('border-primary', 'bg-primary/10');
+            });
+            
+            // 设置选中按钮样式
+            event.target.closest('.orientation-btn').classList.add('border-primary', 'bg-primary/10');
+            
+            // 启用继续按钮
+            document.getElementById('continue-btn').disabled = false;
+            document.getElementById('continue-btn').classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+        
+        // 继续到测试
+        function continueToTest() {
+            // 根据选择的取向确定生成的伴侣性别
+            if (selectedOrientation === 'male') {
+                selectedGender = 'male';
+            } else if (selectedOrientation === 'female') {
+                selectedGender = 'female';
+            } else {
+                // 双性恋取向，随机选择性别
+                selectedGender = Math.random() > 0.5 ? 'male' : 'female';
+            }
+            
+            document.getElementById('orientation-page').classList.add('hidden');
+            document.getElementById('test-page').classList.remove('hidden');
+            
+            loadQuestion(0);
+        }
+        
+        // 加载问题
+        function loadQuestion(index) {
+            currentQuestionIndex = index;
+            const question = questions[index];
+            
+            document.getElementById('question-title').textContent = question.title;
+            document.getElementById('question-text').textContent = question.text;
+            
+            // 更新进度
+            document.getElementById('progress-text').textContent = `${index + 1}/15`;
+            document.getElementById('progress-bar').style.setProperty('--progress-width', `${((index + 1) / 15) * 100}%`);
+            
+            // 加载选项
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, optionIndex) => {
+                const optionBtn = document.createElement('button');
+                optionBtn.className = 'option-btn w-full text-left p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 border-2 border-transparent';
+                optionBtn.onclick = () => selectOption(optionBtn);
+                optionBtn.innerHTML = `<span class="font-semibold">${String.fromCharCode(65 + optionIndex)}. </span><span>${option.text}</span>`;
+                optionBtn.dataset.value = option.value;
+                optionsContainer.appendChild(optionBtn);
+            });
+            
+            // 重置选择状态
+            document.getElementById('next-btn').disabled = true;
+            document.getElementById('next-btn').classList.add('opacity-50', 'cursor-not-allowed');
+            
+            // 更新导航按钮状态
+            if (index === 0) {
+                document.getElementById('prev-btn').disabled = true;
+                document.getElementById('prev-btn').classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                document.getElementById('prev-btn').disabled = false;
+                document.getElementById('prev-btn').classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+            
+            // 如果是最后一题，修改按钮文本
+            if (index === questions.length - 1) {
+                document.getElementById('next-btn').innerHTML = '<i class="fa fa-check mr-2"></i> 查看结果';
+            } else {
+                document.getElementById('next-btn').innerHTML = '<i class="fa fa-arrow-right mr-2"></i> 下一题';
+            }
+            
+            // 如果之前已经回答过这个问题，恢复选择
+            if (answers[index]) {
+                const optionBtns = document.querySelectorAll('.option-btn');
+                optionBtns.forEach(btn => {
+                    if (btn.dataset.value === answers[index]) {
+                        selectOption(btn);
+                    }
+                });
+            }
+        }
+        
+        // 选择选项
+        function selectOption(optionEl) {
+            // 重置所有选项样式
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                btn.style.backgroundColor = '#f9fafb';
+                btn.style.borderColor = 'transparent';
+                btn.style.borderWidth = '2px';
+                btn.style.boxShadow = 'none';
+            });
+            
+            // 设置选中选项样式
+            optionEl.style.backgroundColor = '#ffcccc';
+            optionEl.style.borderColor = '#ff0066';
+            optionEl.style.borderWidth = '3px';
+            optionEl.style.boxShadow = '0 4px 12px rgba(255, 0, 102, 0.3)';
+            
+            // 保存答案
+            answers[currentQuestionIndex] = optionEl.dataset.value;
+            
+            // 启用下一题按钮
+            document.getElementById('next-btn').disabled = false;
+            document.getElementById('next-btn').classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+        
+        // 上一题
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                loadQuestion(currentQuestionIndex - 1);
+            }
+        }
+        
+        // 下一题
+        function nextQuestion() {
+            if (currentQuestionIndex < questions.length - 1) {
+                loadQuestion(currentQuestionIndex + 1);
+            } else {
+                // 显示结果
+                showResult();
+            }
+        }
+        
+        // 显示结果
+        function showResult() {
+            // 分析答案
+            const bestMatch = analyzeAnswers();
+            const result = partnerTypes[bestMatch];
+            
+            // 更新结果页面
+            document.getElementById('result-name').textContent = result.name;
+            document.getElementById('result-description').textContent = result.description;
+            
+            // 更新特质
+            const traitsContainer = document.getElementById('result-traits');
+            traitsContainer.innerHTML = '';
+            
+            result.traits.forEach(trait => {
+                const traitEl = document.createElement('div');
+                traitEl.className = 'flex items-center';
+                traitEl.innerHTML = `<div class="w-3 h-3 bg-primary rounded-full mr-3"></div><span class="text-gray-700">${trait}</span>`;
+                traitsContainer.appendChild(traitEl);
+            });
+            
+            // 设置初始图片
+            currentImageIndex = 0;
+            updateResultImage();
+            
+            // 切换到结果页面
+            document.getElementById('test-page').classList.add('hidden');
+            document.getElementById('result-page').classList.remove('hidden');
+        }
+        
+        // 分析答案
+        function analyzeAnswers() {
+            let matchScores = {};
+            
+            // 初始化所有类型的分数为0
+            Object.keys(partnerTypes).forEach(type => {
+                matchScores[type] = 0;
+            });
+            
+            // 计算每个类型的匹配分数
+            answers.forEach(answer => {
+                Object.keys(partnerTypes).forEach(type => {
+                    if (partnerTypes[type].matchingAnswers.includes(answer)) {
+                        matchScores[type]++;
+                    }
+                });
+            });
+            
+            // 找到匹配分数最高的类型
+            let bestMatch = Object.keys(partnerTypes)[0];
+            let highestScore = matchScores[bestMatch];
+            
+            Object.keys(matchScores).forEach(type => {
+                if (matchScores[type] > highestScore) {
+                    highestScore = matchScores[type];
+                    bestMatch = type;
+                }
+            });
+            
+            return bestMatch;
+        }
+        
+        // 更新结果图片
+        function updateResultImage() {
+            const bestMatch = document.getElementById('result-name').textContent;
+            let result = null;
+            
+            // 找到对应的伴侣类型
+            for (const [type, data] of Object.entries(partnerTypes)) {
+                if (data.name === bestMatch) {
+                    result = data;
+                    break;
+                }
+            }
+            
+            if (result) {
+                // 获取当前性别和风格的图片数组
+                const genderImages = result.images[selectedGender];
+                const styleImages = genderImages[currentStyle];
+                document.getElementById('result-image').src = styleImages[currentImageIndex];
+            }
+        }
+        
+        // 切换风格
+        function switchStyle(style) {
+            currentStyle = style;
+            currentImageIndex = 0;
+            updateResultImage();
+            
+            // 重置所有风格按钮样式
+            document.querySelectorAll('.style-btn').forEach(btn => {
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+            
+            // 设置选中风格按钮样式
+            event.target.classList.remove('bg-gray-200', 'text-gray-700');
+            event.target.classList.add('bg-primary', 'text-white');
+        }
+        
+        // 切换图片
+        function switchImage() {
+            const bestMatch = document.getElementById('result-name').textContent;
+            let result = null;
+            
+            // 找到对应的伴侣类型
+            for (const [type, data] of Object.entries(partnerTypes)) {
+                if (data.name === bestMatch) {
+                    result = data;
+                    break;
+                }
+            }
+            
+            if (result) {
+                // 获取当前性别和风格的图片数组
+                const genderImages = result.images[selectedGender];
+                const styleImages = genderImages[currentStyle];
+                
+                // 更新图片索引
+                currentImageIndex = (currentImageIndex + 1) % styleImages.length;
+                updateResultImage();
+            }
+        }
+        
+        // 重新测试
+        function restartTest() {
+            currentQuestionIndex = 0;
+            answers = [];
+            selectedOrientation = null;
+            currentStyle = 'anime';
+            currentImageIndex = 0;
+            
+            document.getElementById('result-page').classList.add('hidden');
+            document.getElementById('welcome-page').classList.remove('hidden');
+        }
+        
+        // 分享结果
+        function shareResult() {
+            const resultName = document.getElementById('result-name').textContent;
+            const shareText = `我的理想伴侣是${resultName}！快来测试你的理想伴侣吧！`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: '理想伴侣测试结果',
+                    text: shareText,
+                    url: window.location.href
+                });
+            } else {
+                // 复制到剪贴板
+                navigator.clipboard.writeText(shareText + ' ' + window.location.href).then(() => {
+                    alert('结果已复制到剪贴板！');
+                });
+            }
+        }
+    </script>
+
+
+</body></html>
